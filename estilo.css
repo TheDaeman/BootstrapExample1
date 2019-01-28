@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ body{
+     background-image: url("img/fondo1.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+
+ }
+ .fb-seccion{
+     min-height: 500px;
+    
+ }
+ .fb-bgoscuro{
+     background-color:#212121;
+     color:#ffffff;
+ }
+ .fb-bglight{
+     background-color: white;
+     color:#504747;
+ }
+ .contenedor{
+     height: 500px;
+ }
+ .imglista{
+     width: 10em;
+     height: 10em;
+     background-color: transparent;
+     border:0px;
+ }
+ .titulo{
+     font-family: 'Titan One';
+ }
+ .bodyerror{
+    background-image: "img/fondo_degradado.gif";
+
+ }
+ .botenviar{
+    border: 0;
+    color:white;
+    padding: .5em;
+    min-width: 8%;
+ }
+ .textbox{
+     padding: .5em;
+     width: 80%;
+ }
+ .containererror{
+    padding-bottom:20%;
+}
+
+ @media only screen and (max-width: 400px){
+    .containererror{
+        padding-bottom:40%;
+    }
+    .textbox{
+        padding: .5em;
+        max-width: 75%;
+    }
+ }
+ .jumbotron-inicio{
+    background: transparent url('img/fondo1.jpg') no-repeat top center;
+    background-size: 100%;
+    height: 500px;
+    background-size: cover;
+ }
