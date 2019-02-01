@@ -16,67 +16,63 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <a href="#" claa="navbar-brand">Fotobook</a>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark ">
+        <a href="#" class="navbar-brand font-weight-bold">
+            <img src="img/Photobook.png" class="d-inline-block align-top" style= "width:1.5em; height:1.5em;" alt=""> Fotobook</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicio">Servicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="#acerca">Acerca</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
     </nav>
     <main class="main" role="main">
-        <div class="container-fluid fb-seccion fb-bgoscuro jumbotron-inicio">
-                <div class="jumbobox jumbotron-fluid">
+        <div class=" container-fluid fb-seccion jumbotron-inicio">
+                <div class="jumbotron-fluid fb-seccion text-light">
                     <h1 class="titulo"><i class="fas fa-camera"
                         style="font-size:1.5em; color:#56BED3;"></i> Bienvenido a Fotobook</h1>
                 </div>
-        </div>
 
-        <div class="container-fluid fb-seccion fb-bgoscuro">
-                <div class="">
-                    <h3 class="tirulo"><i class="fas fa-cog fa-spin"></i> Servicios</h3>
+                <div class="jumbotron-fluid fb-seccion fb-bgoscuro">
+                    <h3 class="titulo"><i class="fas fa-cog fa-spin"></i> Servicios</h3>
+                </div>
+
+                <div class="jumbotron-fluid fb-seccion fb-bglight">
+                    <h3 class="titulo"><i class="fas fa-images"></i> Galeria</h3>
+                </div>
+        
+                <div class="jumbotron-fluid fb-seccion fb-bgoscuro">
+                    <h3 class="titulo"><i class="fas fa-users"></i> Acerca</h3>
+                </div>
+        
+                <div class="jumbotron-fluid fb-seccion fb-bglight">
+                    <h3 class="titulo"><i class="fas fa-location-arrow"></i> Contactos</h3>
+                </div>
+            
+                <div class="jumbotron-fluid fb-seccion fb-bgoscuro">
+                        <ul class="list-unstyled text-light col-md-6">
+                            <li class="media">
+                                <img src="img/boy-1.png" class="img-thumbnail imglista">
+                                <div class="media-body text-justify">
+                                    <h4>Titulo 1</h4>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod repellat soluta architecto inventore.
+                            </li>
+                            <li class="media">
+                                <img src="img/boy.png" class="img-thumbnail imglista">
+                                <div class="media-body text-justify">
+                                    <h4>Titulo 2</h4>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestiae beatae ex expedita.
+                                </div>
+                            </li>
+                        </ul>
                 </div>
             </div>
-
-        <div class="container-fluid fb-seccion fb-bglight">
-                <div class="">
-                    <h3 class="tirulo"><i class="fas fa-images"></i> Galeria</h3>
-                </div>
-        </div>
-
-        <div class="container-fluid fb-seccion fb-bgoscuro">
-                <div class="">
-                    <h3 class="tirulo"><i class="fas fa-users"></i> Acerca</h3>
-                </div>
-        </div>
-
-        <div class="container-fluid fb-seccion fb-bglight">
-                <div class="">
-                    <h3 class="tirulo"><i class="fas fa-location-arrow"></i> Contactos</h3>
-                </div>
-        </div>
     </main>
-
-    <div class="container-fluid bg-dark">
-        
-    
-        <div class="container-fluid">
-                <ul class="list-unstyled text-light col-md-6">
-                    <li class="media">
-                        <img src="img/boy-1.png" class="img-thumbnail imglista">
-                        <div class="media-body text-justify">
-                            <h4>Titulo 1</h4>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod repellat soluta architecto inventore.
-                    </li>
-                    <li class="media">
-                        <img src="img/boy.png" class="img-thumbnail imglista">
-                        <div class="media-body text-justify">
-                            <h4>Titulo 2</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestiae beatae ex expedita.
-                        </div>
-        
-                    </li>
-                </ul>
-            </div>
-    </div>
-
-    <footer class="bg-warning">
+   
+    <footer class="bg-warning footer fixed-bottom">
         <span class="sr-only">Pie footer</span>Pie footer
+        
     </footer>
 </body>
 </html>

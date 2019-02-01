@@ -6,11 +6,9 @@
      background-image: url("img/fondo1.jpg");
      background-repeat: no-repeat;
      background-attachment: fixed;
-
  }
  .fb-seccion{
-     min-height: 500px;
-    
+     height: 500px;
  }
  .fb-bgoscuro{
      background-color:#212121;
@@ -20,14 +18,11 @@
      background-color: white;
      color:#504747;
  }
- .contenedor{
-     height: 500px;
- }
  .imglista{
      width: 10em;
      height: 10em;
      background-color: transparent;
-     border:0px;
+     border:0;
  }
  .titulo{
      font-family: 'Titan One';
