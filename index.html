@@ -1,78 +1,355 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fotobook</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Bootstrap Library-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Font awesome Library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+        <!-- Estilo personalizado -->
     <link rel="stylesheet" href="estilo.css">
+
     <style>
-            @import "https://fonts.googleapis.com/css?family=Titan+One";
+        @import "https://fonts.googleapis.com/css?family=Titan+One";
     </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm bg-dark ">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
         <a href="#" class="navbar-brand font-weight-bold">
-            <img src="img/Photobook.png" class="d-inline-block align-top" style= "width:1.5em; height:1.5em;" alt=""> Fotobook</a>
-            <ul class="navbar-nav ml-auto">
+            <img src="img/Photobook.png" class="d-inline-block align-top" style="width:1.5em; height:1.5em;" alt="">
+            Comic-force</a>
+        
+            <a class="navbar-toggler" data-toggle="collapse" href="#lista">
+                <i class="navbar-toggler-icon"></i>
+            </a>
+        <div class="collapse navbar-collapse" id="lista">
+            <ul class="navbar-nav  ml-auto" 
                 <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicio">Servicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
                 <li class="nav-item"><a class="nav-link" href="#acerca">Acerca</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
             </ul>
+        </div>
     </nav>
     <main class="main" role="main">
-        <div class=" container-fluid fb-seccion jumbotron-inicio">
-                <div class="jumbotron-fluid fb-seccion text-light">
-                    <h1 class="titulo"><i class="fas fa-camera"
-                        style="font-size:1.5em; color:#56BED3;"></i> Bienvenido a Fotobook</h1>
-                </div>
-
-                <div class="jumbotron-fluid fb-seccion fb-bgoscuro">
-                    <h3 class="titulo"><i class="fas fa-cog fa-spin"></i> Servicios</h3>
-                </div>
-
-                <div class="jumbotron-fluid fb-seccion fb-bglight">
-                    <h3 class="titulo"><i class="fas fa-images"></i> Galeria</h3>
-                </div>
         
-                <div class="jumbotron-fluid fb-seccion fb-bgoscuro">
-                    <h3 class="titulo"><i class="fas fa-users"></i> Acerca</h3>
-                </div>
-        
-                <div class="jumbotron-fluid fb-seccion fb-bglight">
-                    <h3 class="titulo"><i class="fas fa-location-arrow"></i> Contactos</h3>
-                </div>
+        <div class="container-fluid fb-principal fb-bgoscuro mt-5 p-0">
+                
+            <div class="cobertura-principal m-0 row" >
+                
+                    <h1 class="titulo m-auto  hidden show-sm"><i class="fas fa-comment display-4" ></i style="text-wrap: wrap;hyphens: auto;"> Bienvenido &shy;a
+                        &shy;Comic-Force</h1>
+            </div>
             
-                <div class="jumbotron-fluid fb-seccion fb-bgoscuro">
-                        <ul class="list-unstyled text-light col-md-6">
-                            <li class="media">
-                                <img src="img/boy-1.png" class="img-thumbnail imglista">
-                                <div class="media-body text-justify">
-                                    <h4>Titulo 1</h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod repellat soluta architecto inventore.
-                            </li>
-                            <li class="media">
-                                <img src="img/boy.png" class="img-thumbnail imglista">
-                                <div class="media-body text-justify">
-                                    <h4>Titulo 2</h4>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestiae beatae ex expedita.
+                
+        </div>
+
+        <div class="container-fluid fb-seccion fb-bglight">
+            <h3 class="titulo"><i class="fas fa-cog fa-spin"></i> Tipos de Comics</h3>
+            
+
+
+
+
+            <figure class="figure">
+                <img src="img/fondo_degradado.jpg" alt="" class="figure-img img-fluid">
+                <figcaption class="figure-caption"></figcaption>
+            </figure>
+            <div class="list-unstyled">
+                    <div class="media" >
+                            <div class="media-body " >
+                                <img src="img/fondo1.jpg" alt="" class="float-right img-thumbnail" style="height: 25em; width:33%">
+                            </div>
+                        </div>
+                        <div class="media" >
+                                <div class="media-body " >
+                                    <img src="img/fondo3.jpg" alt="" class="img-thumbnail" style="height: 25em; width:33%"></div>
                                 </div>
-                            </li>
-                        </ul>
+                        </div>
+                        <div class="media" >
+                                <div class="media-body " >
+                                    <img src="img/fondo2.jpg" alt="" class="img-thumbnail float-right" style="height: 25em; width:33%"></div>
+                                </div>
+                        </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid fb-seccion fb-bgoscuro">
+            <h3 class="titulo"><i class="fas fa-images"></i> Galeria</h3>
+
+            <div class="alert alert-info alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis porro repudiandae maiores! Quod
+                    corrupti cumque, pariatur similique deserunt fuga perspiciatis quam vero mollitia veniam
+                    necessitatibus nemo doloribus quasi totam culpa.
+                    <a href="#" class="alert-link">Link</a>
+                </p>
+            </div>
+
+            <div class="alert alert-warning alert-dismissible fade show">
+                <button class="btn close" type="button" data-dismiss="alert">&times;</button>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, molestias.</p>
+            </div>
+        <div class="card-group d-flex justify-content-between">
+            <div class="card bg-info col-sm-12 col-md-4 card-img">
+                <div class="card-header card-img-top " style="height: 10em; background-image: url(img/fondo4.png);">VIDEO</div>
+                <img class="card-img-profile mx-auto rounded-circle" src="img/man.png" alt="" >
+                
+                <div class="card-body">
+                    
+                    <div class="card-text">contenido tarjeta</div>
+                </div>
+                <div class="card-footer">`Pie</div>
+            </div>
+
+            <div class="card bg-info col-sm-12 col-md-4 card-img">
+                <div class="card-header card-img-top " style="height: 10em; background-image: url(img/fondo4.png);">VIDEO</div>
+                <img class="card-img-profile mx-auto rounded-circle" src="img/man.png" alt="" >
+                
+                <div class="card-body">
+                    
+                    <div class="card-text">contenido tarjeta</div>
+                </div>
+                <div class="card-footer">`Pie</div>
+            </div>
+
+            <div class="card  bg-info col-sm-12 col-md-4 card-img">
+                <div class="card-header card-img-top " style="height: 10em; background-image: url(img/fondo4.png);">VIDEO</div>
+                <img class="card-img-profile mx-auto rounded-circle" src="img/man.png" alt="" >
+                
+                <div class="card-body">
+                    
+                    <div class="card-text">contenido tarjeta</div>
+                </div>
+                <div class="card-footer">`Pie</div>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="container-fluid fb-seccion fb-bglight">
+            <h3 class="titulo"><i class="fas fa-users"></i> Acerca</h3>
+            <div class="progress" style="width: 60%;">
+                <div class="progress progress-bar-striped bg-danger progress-bar-animated w-25" style="width: 80%;">25%</div>
+                <div class="progress progress-bar-striped bg-primary progress-bar-animated w-50" style="width: 10%;">25%</div>
+                <div class="progress progress-bar-striped bg-secondary progress-bar-animated w-25" style="width: 10%;">25%</div>
+            </div>
+            <div class="pagination">
+                <li class="page-item"><a class="page-link" href="">Previus</a></li>
+                <li class="page-item"><a class="page-link" href="">pagina-1</a></li>
+                <li class="page-item"><a class="page-link" href="">pagina-2</a></li>
+                <li class="page-item"><a class="page-link" href="">pagina-3</a></li>
+                <li class="page-item"><a class="page-link" href="">Next</a></li>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-toggle btn btn-info" type="button" data-toggle="dropdown">Desplegable</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item ">Item-1</li>
+                    <li class="dropdown-item">Item-2</li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-header">Titulo 1</li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-item">Item-3</li>
+                    <li class="dropdown-item">Item-4</li>
+                    <li class="dropdown-item">Item-5</li>
+                </ul>
+            </div>
+            
+            <button class="btn btn-warning" data-toggle="collapse" data-target="#uno">COllapse 1</button>
+            <button class="btn btn-warning" data-toggle="collapse" data-target="#dos">COllapse 2</button>
+            <button class="btn btn-warning" data-toggle="collapse" data-target="#tres">COllapse 3</button>
+            <div id="uno" class="collapse">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem mollitia, odit culpa voluptates, pariatur eveniet nam soluta inventore id, excepturi incidunt eius magnam! Tempora, ipsa doloribus voluptatibus aut reiciendis quibusdam!</div>
+            <div id="dos" class="collapse">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem mollitia, odit culpa voluptates, pariatur eveniet nam soluta inventore id, excepturi incidunt eius magnam! Tempora, ipsa doloribus voluptatibus aut reiciendis quibusdam!</div>
+            <div id="tres" class="collapse">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem mollitia, odit culpa voluptates, pariatur eveniet nam soluta inventore id, excepturi incidunt eius magnam! Tempora, ipsa doloribus voluptatibus aut reiciendis quibusdam!</div>
+
+            <div id="acordeon">
+                <div class="card">
+                    <div class="card-header">
+                        <button data-target="#acord1" class="card-link" data-toggle="collapse" data-parent="#acordeon">Acordeon 1</button>
+                        <a href="#acord1" class="card-link" data-toggle="collapse" data-parent="#acordeon">Acordeon 1</a>
+                    </div>
+                    <div id="acord1" class="collapse">
+                        <div class="card-body">
+                                Acordeon Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum temporibus rerum accusamus esse iure quae impedit veniam, perferendis, sint vel aliquid quos incidunt odit dicta.
+                        </div>
+                    </div>
                 </div>
             </div>
-    </main>
-   
-    <footer class="bg-warning footer fixed-bottom">
-        <span class="sr-only">Pie footer</span>Pie footer
+
+            <nav class="navbar navbar-dark  navbar-expand-sm bg-primary">
+                <a href="#" class="navbar-brand"><img src="img/man.png" style="width:30px;" alt="" class="d-inline-block align-top">Botoncito</a>
+                <button class="navbar-toggler" type="button" data-target="#comentarioDesplegable" data-toggle="collapse" aria-controls="navbarTogglerDemo01" aria-expanded="false">
+                    <span class="navbar-toggler-icon toggler-icon-dark"></span></button>
+                
+                    <div class="collapse navbar-collapse" id="comentarioDesplegable">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item "><a href="" class="navlink">opcion 1</a></li>
+                            <li class="nav-item ">opcion 2</li>
+                            <li class="nav-item">opcion 3</li>
+                            <li class="nav-item">opcion 4</li>
+                            <li class="nav-item">opcion 5</li>
+                        </ul>
+                    </div>
+                
+                </nav>
+
+
+
+
+
+
+              
+              
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+        </div><!-- Acerca -->
+
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">Home</a></li>
+            <li class="breadcrumb-item"><a href="">Fotos</a></li>
+            <li class="breadcrumb-item"><a href="">Verano</a></li>
+            <li class="breadcrumb-item"><a href="">Italia</a></li>
+            <li class="breadcrumb-item"><a href="">Roma</a></li>
+        </ul>
+
+        <ul class="list-group list-group-primary">
+            <li class="list-group-item btn bg-primary text-light">Lunes</li>
+            <li class="list-group-item btn bg-primary text-light">Martes</li>
+            <li class="list-group-item btn bg-primary text-light">Miercoles</li>
+            <li class="list-group-item btn bg-primary text-light">JUeves</li>
+            <li class="list-group-item btn bg-primary text-light">Viernes</li>
+            <li class="list-group-item btn bg-primary text-light">Sabado</li>
+            <li class="list-group-item btn bg-primary text-light">Domingo</li>
+        </ul>
+
+        <div class="container-fluid fb-seccion fb-bgoscuro">
+            <h3 class="titulo"><i class="fas fa-location-arrow"></i> Contactos</h3>
+            
+            
+            <div class="btn-group">
+                <button class="btn-success">Aceptar</button>
+                <button class="btn-warning">Cancelar</button>
+                <button class="btn-danger">Rechazar</button>
+
+                
+            </div>
+            <div class="card w-25">
+                <div class="card-header bg-dark" style="background:url(img/fondo4.png) no-repeat bottom; ">
+                    <h3 class="card-title d-flex justify-content-center" style="padding: 0px;" >Minina deli</h3>
+                    <img src="img/fondo5.png" alt="" class="card-img">
+                    <img src="img/girl.png" alt="" class="card-img-profile rounded-circle w-100" style="margin-top:-10em;" >
+                        
+                   
+                </div>
+            
+                <div class="card-body bg-light text-black-50">
+                    Cuerpoooo
+                </div>
+                <div class="card-footer bg-info">Pie ediondo</div>
+            </div>
+            
+        </div>
+
         
+
+        <div class="container-fluid fb-lista fb-bglight">
+            <ul class="list-unstyled text-dark col-md-6 p-5">
+                <li class="media">
+                    <img src="img/Gif_PerfilProfesional1.gif" class="img-thumbnail imglista">
+                    <div class="media-body text-justify">
+                        <h4>Titulo 1</h4>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod repellat soluta architecto
+                        inventore.
+                </li>
+                <li class="media">
+                    <img src="img/boy.png" class="img-thumbnail imglista">
+                    <div class="media-body text-justify">
+                        <h4>Titulo 2</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestiae beatae ex expedita.
+                    </div>
+                </li>
+                <li class="media">
+                    <img src="img/girl-1.png" class="img-thumbnail imglista">
+                    <div class="media-body text-justify">
+                        <h4>Titulo 3</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestiae beatae ex expedita.
+                    </div>
+                </li>
+                <li class="media">
+                    <img src="img/girl.png" class="img-thumbnail imglista">
+                    <div class="media-body text-justify">
+                        <h4>Titulo 3</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestiae beatae ex expedita.
+
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+    <footer class="bg-success footer">
+        <span class="sr-only">Pie footer</span>Pie footer
+        <ul class="unstyled-list justify-content-center border"
+            style="display: flex; flex-direction: row; list-style: none;">
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+        </ul>
     </footer>
 </body>
+
 </html>
