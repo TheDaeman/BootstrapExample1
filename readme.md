@@ -1,7 +1,10 @@
-## Notas:
-Por favor no utilices mal mis experiencias
-git log
-Estoy modificando algo para probar el status
-Modugucando nuevamente para probar commit
+## Description:
+Basic page for sales paper belongins
 
-Este archivo ser[a removido para probar el stash]
+I will use
+
+[1] HTML 5
+[2] CSS 3
+[3] Bootstrap
+
+maybe i will add javascript to bether effects in the future...
